@@ -44,13 +44,13 @@ Options
 	*/
 	"view": {
 		"modes": ["details", "grid", "icons"],
-		"sizes": [48, 24, 96],
+		"sizes": [24, 48, 96],
 		"setParentFolderLabels": true,
 		"hideParentFolderLinks": false,
 		"hideFolders": false,
 		"binaryPrefix": false,
 		"indexFiles": ["index.html", "index.htm", "index.php"],
-		"ignore": ["^\\.", "^_{{pkg.name}}"],
+		"ignore": ["^\\.", "^_{{pkg.name}}" "^favicon.ico"],
 		"smartBrowsing": true,
 		"extInNewWindow": false
 	},
