@@ -104,7 +104,7 @@ Options
 	*/
 	"dropbox": {
 		"enabled": true,
-		"maxfiles": 10,
+		"maxfiles": 100,
 		"maxfilesize": 1000
 	},
 
@@ -154,9 +154,14 @@ Options
 	see: http://support.google.com/googleanalytics/bin/topic.py?hl=en&topic=27612
 	*/
 	"google-analytics": {
-		"enabled": false,
-		"gaq": []
-	},
+    "enabled": true,
+    "gaq": [
+      ["_setAccount", "UA-30998400-3"],
+      ["_setDomainName", ".dl.phiexz.com"],
+      ["_trackPageview"],
+      ["_trackPageLoadTime"]
+    ]
+  },
 
 	/*
 	Localization, for example "en", "de" etc. - see "langs" below for
@@ -188,7 +193,7 @@ Options
 		2: mode, servername and -version
 	*/
 	"mode": {
-		"enabled": true,
+		"enabled": false,
 		"display": 2
 	},
 
@@ -199,9 +204,9 @@ Options
 	- idSite: number
 	*/
 	"piwik-analytics": {
-		"enabled": false,
-		"baseURL": "some/url",
-		"idSite": 1
+		"enabled": true,
+		"baseURL": "analytics.phiexz.com",
+		"idSite": 3
 	},
 
 	/*
@@ -281,7 +286,7 @@ Options
 	- size: width and height in pixel
 	*/
 	"qrcode": {
-		"enabled": true,
+		"enabled": false,
 		"size": 150
 	},
 
