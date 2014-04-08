@@ -50,7 +50,7 @@ Options
 		"hideFolders": false,
 		"binaryPrefix": false,
 		"indexFiles": ["index.html", "index.htm", "index.php"],
-		"ignore": ["^\\.", "^_{{pkg.name}}", "^favicon.ico"],
+		"ignore": ["^\\.", "^_{{pkg.name}}", "^favicon.ico", "^status.json"],
 		"smartBrowsing": true,
 		"extInNewWindow": false
 	},
