@@ -20,7 +20,7 @@ $.getJSON('/status.json', function(serverStats) {
   document.getElementById("ServerStatsUp_H").innerHTML=serverStats.up_h+' Hours';
   document.getElementById("ServerStatsUp_M").innerHTML=serverStats.up_m+' Minutes';
   document.getElementById("ServerStatsRam_U").innerHTML=RamUsedP.toFixed(2)+'% Used';
-  document.getElementById("ServerStatsRam_C").innerHTML=RamCacheP.toFixed(2)+'% Used for Cache';
+  document.getElementById("ServerStatsRam_C").innerHTML=RamCacheP.toFixed(2)+'% Cached';
   document.getElementById("ServerStatsRam_F").innerHTML=RamFreeP.toFixed(2)+'% Free';
   $("#ServerStatsRamUsedP").attr("style", 'width: '+RamUsedP.toFixed(2)+'%');
   $("#ServerStatsRamCacheP").attr("style", 'width: '+RamCacheP.toFixed(2)+'%');
